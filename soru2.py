@@ -1,9 +1,6 @@
-import math
+m=0
+for i in range(1,1000000):
+    m+=1/(i**2)
 
-toplam=0
-for i in range(1,10000000,1):
-    toplam=toplam+(1/(i*i))
-
-pi=math.sqrt(6*toplam)
-
+pi=(6*m)**(1/2)
 print(pi)
